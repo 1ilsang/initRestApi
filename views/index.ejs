@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div style="margin-top: 10%">
+            <center>
+                <h1>Hello World!</h1><br>
+                welcome <br><br>
+                <script>
+                    if(Number('<%= checkSign%>') == 2){
+                        document.write('<a href="/login/signOut"><button>Sign out</button></a>'+
+                        '<p><h2 style="color:blue;">'+String('<%= name %>')+' 관리자님 환영합니다.</h2>'
+                        +'<br><a href="/admin/edit">정보수정</a><br>'
+                        +'<br><a href="/admin/">회원관리</a>');
+                    }else if(Number('<%= checkSign%>') == 1){
+                        document.write('<a href="/login/signOut"><button>Sign out</button></a>'+
+                        '<p><h3 style="color:black;"><%=name%>님 환영합니다.</h3>'
+                            +'<br><a href="/users/">정보수정</a>');
+                    }else{
+                        document.write('<a href="/login/signIn"><button>Sign in</button></a>'+
+                         ' <a href="/login/signUp"><button>Sign up</button></a>');
+                    }
+                </script>
+            </center>
+    </div>
+</body>
+</html>

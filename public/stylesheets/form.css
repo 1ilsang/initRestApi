@@ -1,0 +1,15 @@
+#align {  
+    width:100%;  
+    height:100px;
+    text-align:center;  
+}  
+#content {  
+    margin:0 auto;
+    width:40%;
+    text-align:left;  
+}
+a {
+    color: #00B7FF;
+    float:right;
+    margin-right:10%;
+  }

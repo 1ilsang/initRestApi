@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/form.css">
+</head>
+<body>
+    <center style="margin-top:10%;">
+        <h1>로 그 인</h1>
+    </center>
+    <script>
+        if(Number('<%= chk %>')){
+            document.write('<center><h2 style="color:red;">접속실패 다시 로그인 해주세요!</h2></center>');
+        }
+    </script>
+    <div id="align">  
+        <div id="content">  
+            <form action="/users/loginUser" method="post">
+                id  <p></p> <input type="text" name="id"><p></p>
+                pw  <p></p><input type="password" name="pwd"><p></p>
+                <input type="submit" value="제출">
+            </form>
+        </div>  
+
+        <a href="/"> 
+            <h3>
+                <i>홈으로</i>
+            </h3>
+        </a>
+    </div>
+</body>
+</html>

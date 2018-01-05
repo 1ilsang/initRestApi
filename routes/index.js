@@ -13,6 +13,9 @@ router.get('/', function(req, res, next) {
     res.render('index', {'checkSign':0, name:""});
   }
 });
+router.get('/game',function(req,res,next){
+  res.render('game');
+});
 
 router.get('/test', function(req,res,next){
   let msg = "세션 존재 x"
